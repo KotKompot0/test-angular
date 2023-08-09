@@ -20,6 +20,7 @@ jobs:
         run: | 
           yarn
           yarn add @angular-devkit/build-angular --dev
+          yarn add karma-coverage-istanbul-reporter
       - uses: KotKompot0/github-set-proxy-conf-angular@v0.1.0
         with:
           path: "./proxy.conf.json"
