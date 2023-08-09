@@ -1,0 +1,16 @@
+<div class="time">
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <h3>{{ currentTime }}</h3>
+    </div>
+    <div>
+      <input id="timeZone" type="text" [(ngModel)]="form.timeZone" name="timeZone" #timeZone="ngModel" required>
+    </div>
+    <div *ngIf="timeZone.errors?.['required']" class="error">
+      * Enter time zone
+    </div>
+    <div>
+      <button type="submit" [attr.disabled]="timeZone.errors?.['required']">current time</button>
+    </div>
+  </form>
+</div>
