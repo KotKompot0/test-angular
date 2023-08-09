@@ -21,7 +21,7 @@ jobs:
           yarn
           yarn add @angular-devkit/build-angular --dev
           yarn add karma-coverage-istanbul-reporter
-      - uses: KotKompot0/github-set-proxy-conf-angular@v0.1.0
+      - uses: kotorkovsciy/github-set-proxy-conf-angular@v0.1.0
         with:
           path: "./proxy.conf.json"
           target: "https://www.timeapi.io/api"
